@@ -1,0 +1,19 @@
+# 把中文转译成其拼音形式。
+from pypinyin import pinyin
+raw_s = """
+如果一生必须分开 方可以与你再相遇
+为何时间 缓缓流过 任让寂寞凝聚
+"""
+l = pinyin(raw_s)
+s =  []
+for i in l:
+    s += i
+print(''.join(s))
+
+##################
+'''
+输出：
+rúguǒyīshēngbìxūfēnkāi fāngkěyǐyǔnǐzàixiāngyù
+wèihéshíjiān huǎnhuǎnliúguò rènràngjìmòníngjù
+'''
+#################
