@@ -1,3 +1,4 @@
+# 提取照片里的信息，如拍摄时间、拍摄地点（如果有GPS信息的话）等。
 import exifread
 import requests
 import jsonpath
